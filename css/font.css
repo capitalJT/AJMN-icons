@@ -37,13 +37,13 @@
 .ajmn-calendar:before {
   content: "c"; }
 
-.ajmn-carel-right:before {
+.ajmn-caret-down:before {
   content: "d"; }
 
-.ajmn-caret-down:before {
+.ajmn-caret-left:before {
   content: "e"; }
 
-.ajmn-caret-left:before {
+.ajmn-caret-right:before {
   content: "f"; }
 
 .ajmn-caret-up:before {
@@ -106,43 +106,43 @@
 .ajmn-list:before {
   content: "z"; }
 
-.ajmn-record:before {
+.ajmn-location-pin:before {
   content: "A"; }
 
-.ajmn-profile:before {
+.ajmn-mail:before {
   content: "B"; }
 
-.ajmn-printer:before {
+.ajmn-menu:before {
   content: "C"; }
 
-.ajmn-plus:before {
+.ajmn-more:before {
   content: "D"; }
 
-.ajmn-play:before {
+.ajmn-open-quotes:before {
   content: "E"; }
 
-.ajmn-photo-gallery:before {
+.ajmn-pause:before {
   content: "F"; }
 
 .ajmn-photo:before {
   content: "G"; }
 
-.ajmn-pause:before {
+.ajmn-photo-gallery:before {
   content: "H"; }
 
-.ajmn-open-quotes:before {
+.ajmn-play:before {
   content: "I"; }
 
-.ajmn-more:before {
+.ajmn-plus:before {
   content: "J"; }
 
-.ajmn-menu:before {
+.ajmn-printer:before {
   content: "K"; }
 
-.ajmn-mail:before {
+.ajmn-profile:before {
   content: "L"; }
 
-.ajmn-location-pin:before {
+.ajmn-record:before {
   content: "M"; }
 
 .ajmn-rewind:before {

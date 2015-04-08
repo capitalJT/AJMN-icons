@@ -2,7 +2,7 @@
 
 <p>AJMN Icons are the official Icons for the Al Jazeera Media Network</p>
 
-<h2>What&rsquo;s Included?</h2>
+<h3>What&rsquo;s Included?</h3>
 
 <ul>
 <li>SVG versions of all icons</li>
@@ -10,7 +10,7 @@
 </ul>
 
 
-<h2>Usage</h2>
+<h3>Usage</h3>
 
 <p>Reference the stylesheet:</p>
 
@@ -22,6 +22,21 @@
 <pre><code>&lt;div&gt;&lt;/div&gt;
 </code></pre>
 
-<p>Add a class referencing the <code>icon</code> spritesheet and specific icon <code>ajmn-alert</code>, which you can get from the above stylesheet.</p>
+<p>Add a class referencing the <code>icon</code> stylesheet and specific icon <code>ajmn-alert</code>, which you can get from the above stylesheet.</p>
 
-<p>That&rsquo;s it!</p>
+<pre><code>&lt;div class="icon ajmn-alert"&gt;&lt;/div&gt;
+</code></pre>
+
+<h4>Character Mapping</h4>
+
+<p>To use character mapping all you have to do is create an element that will use the icon:</p>
+
+<pre><code>    &lt;div&gt;&lt;/div&gt;
+</code></pre>
+
+<p>Add the <code>data-icon</code> data attribute with the specific character you want to be mapped:</p>
+
+<pre><code>    &lt;div data-icon="a" class"icon"&gt;&lt;/div&gt;
+</code></pre>
+
+<p>And that&rsquo;s it!</p>

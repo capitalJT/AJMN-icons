@@ -32,7 +32,7 @@ Add the `data-icon` data attribute with the specific character you want to be ma
 
 		<div data-icon="a" class"icon"></div>
 
-####SVG Sprite####
+####HOW TO ADD SVG SPRITE ICONS TO YOUR PROJECT####
 
 Upload the icons.svg file to your server. In our examples below we assume that the sprite file will be available at: `http://yoursite.com/images/icons.svg`
 

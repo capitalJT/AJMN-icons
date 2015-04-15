@@ -1,12 +1,13 @@
 <h1>AJMN Icons</h1>
 
-<p>AJMN Icons are the official Icons for the Al Jazeera Media Network</p>
+<p>AJMN Icons are the official Icons for the Al Jazeera Media Network.</p>
 
 <h3>What&rsquo;s Included?</h3>
 
 <ul>
 <li>SVG versions of all icons</li>
 <li>Web fonts in the following formats: eot, svg, ttf, woff</li>
+<li>SVG sprite</li>
 </ul>
 
 
@@ -22,9 +23,9 @@
 <pre><code>&lt;div&gt;&lt;/div&gt;
 </code></pre>
 
-<p>Add a class referencing the <code>icon</code> stylesheet and specific icon <code>ajmn-alert</code>, which you can get from the above stylesheet.</p>
+<p>Add a class referencing the <code>icon</code> stylesheet and specific icon <code>icon-ajmn-alert</code>, which you can get from the above stylesheet.</p>
 
-<pre><code>&lt;div class="icon ajmn-alert"&gt;&lt;/div&gt;
+<pre><code>&lt;div class="icon icon-ajmn-alert"&gt;&lt;/div&gt;
 </code></pre>
 
 <h4>Character Mapping</h4>
@@ -38,5 +39,35 @@
 
 <pre><code>    &lt;div data-icon="a" class"icon"&gt;&lt;/div&gt;
 </code></pre>
+
+<h4>SVG Sprite</h4>
+
+<p>Upload the icons.svg file to your server. In our examples below we assume that the sprite file will be available at: <code>http://yoursite.com/images/icons.svg</code></p>
+
+<p>Go to &ldquo;Icons Reference&rdquo; and choose an icon that you want to have on your HTML page. Then click and copy its markup to your HTML page. For instance, the markup for a twitter icon could look like this:</p>
+
+<pre><code>    &lt;svg class="icon-twitter"&gt;&lt;use xlink:href="#icon-twitter"&gt;&lt;/use&gt;&lt;/svg&gt;
+</code></pre>
+
+<p>Now it&rsquo;s time to add the sprite file URL to the icon markup. In the example below, the URL is /images/icons.svg. So now the twitter icon markup could look like this:</p>
+
+<pre><code>    &lt;svg class="icon-twitter"&gt;&lt;use xlink:href="/images/icons.svg#icon-twitter"&gt;&lt;/use&gt;&lt;/svg&gt;
+</code></pre>
+
+<p>Add the code below to the CSS file that you use for your html page:</p>
+
+<pre><code>    [class^="icon-"], [class*=" icon-"] {
+    height: 32px;
+    width: 32px;
+    display: inline-block;
+    fill: currentColor;
+    }
+</code></pre>
+
+<p>You can use <code>height</code> and <code>width</code> properties to control icon size. To define icon color use <code>fill</code> property. Note: <code>currentColor</code> keyword inherits the color value of a parent element.</p>
+
+<p>For IE capability you can use a great polyfill: <a href="https://github.com/jonathantneal/svg4everybody">svg4everybody</a></p>
+
+<p><strong>Remember:</strong> with Icon Cloud you don&rsquo;t have to worry about IE capability, the sprite file and other stuff. We&rsquo;ll take care of all of that for you, just click the &ldquo;Publish&rdquo; button and give it a try.</p>
 
 <p>And that&rsquo;s it!</p>

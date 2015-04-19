@@ -6,10 +6,17 @@ body{
 	width:80%;
 }
 
+$fz:(
+	sm: 12px,
+	reg: 16px,
+	large: 26px,
+	xl: 38px
+);
+
 h1{
 	margin:40px 0 20px;
 	font-weight:700;
-	font-size:38px;
+	font-size: map-get($fz,xl);
 	line-height:32px;
 	color:$color-primary;
 }

@@ -47,10 +47,10 @@ Now it's time to add the sprite file URL to the icon markup. In the example belo
 Add the code below to the CSS file that you use for your html page:
 
 		[class^="icon-"], [class*=" icon-"] {
-	    height: 32px;
-	    width: 32px;
-	    display: inline-block;
-	    fill: currentColor;
+		    height: 32px;
+		    width: 32px;
+		    display: inline-block;
+		    fill: currentColor;
 		}
 
 You can use `height` and `width` properties to control icon size. To define icon color use `fill` property. Note: `currentColor` keyword inherits the color value of a parent element.
